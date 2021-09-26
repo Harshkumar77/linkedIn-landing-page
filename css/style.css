@@ -7,16 +7,24 @@ body {
 .logo {
   color: #0a66c2;
 }
-.join-now,
 .sign-in {
-}
-.sign-in {
+  border-style: inset;
+  border-color: #0a66c2;
+  color: #0a66c2;
+  border-radius: 30px;
+  border-width: 1px;
 }
 .sign-in:hover {
+  box-shadow: inset 0px 0px 0px 1px #0e76a8;
+  background-color: #eaf4fe;
 }
 .join-now {
+  color: #686c74;
+  border-radius: 3px;
 }
 .join-now:hover {
+  color: black;
+  background-color: #ebebeb;
 }
 nav * {
 }
@@ -28,6 +36,7 @@ nav * {
   margin: 0 auto;
 }
 .features {
+  padding-bottom: 200px;
 }
 .features h1 {
 }
@@ -52,10 +61,6 @@ nav * {
 }
 
 @media screen and (min-width: 800px) {
-  at-text .display-1 {
-    width: 468px;
-    margin: 0;
-  }
   .Person-working {
     display: none;
   }
@@ -67,5 +72,21 @@ nav * {
   }
   .feat-text {
     width: 500px;
+  }
+  .feat-text .display-1 {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  nav {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .features {
+    background-position-x: 90%;
+    background-size: 700px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
